@@ -98,10 +98,10 @@ be discovered by Googling.  Click on those Stackoverflow links.  It has many hel
 
 The debugger for C/C++ is `gdb`, developed by GNU, again.  In order to use gdb, we need to compile the
 source code using the `-g` flag to include appropriate debug information in the generated binary files.
-An example, `gcc -c -g foo.c`.
+An example, `gcc -c -g main.c`.
 
 My foo program is buggy, and does not even terminate!
-To debug, type `gdb foo`.  The most basic gdb commands are: (I give their shortcut form)
+To debug, type `gdb a.out`.  The most basic gdb commands are: (I give their shortcut form)
 - `r` (run the program)
 - `<ctrl-c>` to stop the program inside gdb
 - `bt` (print out the stack, i.e. where in the program's execution it is being stopped at)
